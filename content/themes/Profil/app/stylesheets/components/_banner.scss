@@ -1,0 +1,55 @@
+.banner {
+    background: {
+        position: right;
+        repeat: no-repeat;
+        size: cover;
+    }
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 0 1.5em 8em;
+    position: relative;
+    z-index: 1;
+
+    .oclock{
+        color: rgb(168, 164, 84);
+    }
+    .oclock:hover{
+        color:#0AC3A7;
+        text-decoration: none;
+    }
+
+    @media (min-width: $breakpoint-small){
+        width: 1292px;
+        font-size: 29px;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        padding-right: 20%;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        padding-right: 50%;
+        width: 118rem;
+    }
+
+    &:after {
+        background-image: linear-gradient(
+            90deg,
+            transparentize(#000, 0),
+            transparentize(#000, 1)
+        );
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+.intro__content{
+    font-size: 20px;
+}

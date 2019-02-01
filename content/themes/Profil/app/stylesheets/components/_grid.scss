@@ -1,0 +1,155 @@
+.competence{
+
+    
+    margin-right: auto;
+    margin-left:  auto; 
+    border: 3px solid $color-grey;
+    width: 70em;
+    padding: 5em;
+    margin-top: 5em;
+    box-shadow: 10px 10px 5px grey;
+    @media (min-width: $breakpoint-small){
+        width: 51em;
+        padding:1em;
+        font-size:25px
+    }
+    @media (min-width: $breakpoint-large){
+        width:75em;
+    }
+}
+
+.outils{
+    margin-bottom: 5em;
+    border: 3px solid $color-grey;
+    width: 98%;
+    margin-right: auto;
+    margin-left:  auto; 
+    padding: 5em;
+    box-shadow: 10px 10px 5px grey;
+    @media (min-width: $breakpoint-small){
+        width: 51em;
+        padding:1em;
+        font-size:25px
+    }
+    @media (min-width: $breakpoint-large){
+        width: 75em;
+        
+    }
+}
+
+.language{
+    
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-right: auto;
+    margin-left:  auto; 
+    border: 3px solid $color-grey;
+    width: 98%;
+    padding: 5em;
+    box-shadow: 10px 10px 5px grey;
+    @media (min-width: $breakpoint-small){
+        width: 51em;
+        padding:1em;
+        font-size:25px
+    }
+    @media (min-width: $breakpoint-large){
+        width: 75em;
+        
+    }
+}
+
+.title-competence{
+    text-align: center;
+    color:black;
+}
+
+.skill-flex{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.skill{
+    border: $border-width-normal solid $color-grey;
+    padding: 0.5em;
+    margin : 2em;
+    border-radius: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    @media (min-width: $breakpoint-small){
+        margin:0.5em;
+        padding:0.5em
+    }
+    &:hover {
+        border-color: $color-purple;
+        color: $color-purple;
+        box-shadow: 10px 10px 5px grey;
+    }
+}
+.title-language{
+    text-align: center; 
+    margin-bottom: 3em;
+    color: black;
+}
+
+.techno{
+    display: flex !important;
+    justify-content: center; 
+    .legende{
+        text-align: center;
+        font-weight: bold;
+
+    } 
+}
+
+.cardskill{
+border: 5px solid #2b2b2f;
+margin: .5rem;
+border-radius: 10px;
+text-align: center;
+width: 150px;
+height: 150px;
+background-size: cover;
+background-position: 50%;
+&:hover {
+    border-color: $color-purple;
+    color: $color-purple;
+    box-shadow: 10px 10px 5px grey;
+}
+    @media (min-width: $breakpoint-small){
+        width: 83px;
+        height: 83px;
+    }
+    @media (min-width: $breakpoint-large){
+        width: 120px;
+        height: 120px;
+    }
+
+
+}
+
+.cardskill2{
+    border: 5px solid #2b2b2f;
+    margin: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: 50%;
+    &:hover {
+        border-color: $color-purple;
+        color: $color-purple;
+        box-shadow: 10px 10px 5px grey;
+    }
+    @media (min-width: $breakpoint-small){
+        width: 83px;
+        height: 83px;
+    }
+    @media (min-width: $breakpoint-large){
+        width: 120px;
+        height: 120px;
+    }
+    }

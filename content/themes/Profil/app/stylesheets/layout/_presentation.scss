@@ -1,0 +1,59 @@
+.presentation{
+    @media (min-width: $breakpoint-small){
+        width: 80em;
+    }
+    @media (min-width: $breakpoint-large){
+        width: 118em;
+}
+}
+
+
+.flex-pre{
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: $breakpoint-small){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $breakpoint-large){
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center
+    }
+}
+.text-pre{
+    margin: 1em!important;
+    border: 2px solid $color-grey;
+    box-shadow: 10px 10px 5px grey;
+    padding: 1em!important;
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    @media (min-width: $breakpoint-small){
+        width: 100%;
+        font-size: 35px
+    }
+    @media (min-width: $breakpoint-large){
+        padding: 6em;
+        margin: 3em; 
+    }
+}
+
+.img-pre{
+    margin: 1em!important;
+    border: 3px solid ;
+    box-shadow: 10px 10px 5px grey;
+    text-align: center;
+    width: 100%!important;
+    background-size: cover;
+    background-position: 50%;
+    @media (min-width: $breakpoint-small){
+        width: 100%;
+        height: 27em; 
+    }
+    @media (min-width: $breakpoint-large){
+        padding: 1em;
+        margin: 3em; 
+    }
+}

@@ -1,0 +1,15 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__link {
+        border-bottom: $border-width-small solid darken($color-white, 50);
+        letter-spacing: 0.1em;
+        line-height: 3em;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}

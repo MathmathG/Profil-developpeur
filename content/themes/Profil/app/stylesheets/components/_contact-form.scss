@@ -1,0 +1,10 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+
+    .wpcf7-not-valid-tip {
+        margin-top: .5em;
+    }
+}

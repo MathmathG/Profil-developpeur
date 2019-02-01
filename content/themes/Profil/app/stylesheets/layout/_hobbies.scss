@@ -1,0 +1,101 @@
+
+
+.hobbies{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media (min-width:$breakpoint-small){
+            width: 36.9em;
+            font-size: 35px;
+        }
+        @media (min-width:$breakpoint-medium){
+            width: 36.9em;
+            font-size: 35px;
+        }
+        @media (min-width:$breakpoint-large){
+            width: 95.2em;
+            font-size: 20px;
+        }
+        .post-hobbies {
+            width: 100%;
+            background: {
+                position: center;
+                repeat: no-repeat;
+                
+            }
+            min-height: 50vh;
+            padding: 2em 1em;
+            position: relative;
+            z-index: 1;
+        
+            &__header {
+                &__title {
+                    color: black;
+                    border-bottom: $border-width-normal solid black;
+                }
+                
+            }
+        
+            &:after {
+                content: '';
+                background-color: $color-grey;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                opacity: 0.9;
+                right: 0;
+                top: 0;
+                transition: opacity $transition-duration-normal,
+                            color $transition-duration-fast;
+                z-index: -1;
+            }
+        
+            &:hover:after {
+                background-color: $color-grey;
+                opacity: 0.3;
+            }
+        
+            @each $index, $background-color in $post-hobbies-background-colors {
+                &:nth-child(#{$index})::after {
+                    background-color: $background-color;
+                }
+            }
+            @each $index, $background-size in $post-hobbies-background-size {
+                &:nth-child(#{$index}){
+                    background-size: $background-size;
+                }
+                }
+                @each $index, $color in $post-hobbies-color {
+                    &:nth-child(#{$index}){
+                        color: $color;
+                    }
+                    }
+            @media (min-width: $breakpoint-medium) {
+                width: 50%;
+            }
+    
+            @media (min-width: $breakpoint-large) {
+                width: 40%;
+    
+                &:nth-child(4n - 2),
+                &:nth-child(4n - 1) {
+                    width: 60%;
+                }
+            }
+            a{
+                color: brown;
+                font-weight: bold;
+            }
+            a:hover{
+                color:black;
+            }
+
+        }
+}
+
+
+
+

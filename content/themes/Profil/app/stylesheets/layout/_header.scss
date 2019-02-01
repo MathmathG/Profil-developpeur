@@ -1,0 +1,96 @@
+.header{
+    display: flex;
+    font-size: 33px;
+    justify-content: space-between;
+    left: 0;
+    line-height: 3em;
+    padding: 0 1em;
+    right: 0;
+    top: 0;
+    color: #848484;
+    position: absolute;
+    z-index: 2;
+    @media (min-width: $breakpoint-small){  
+        width: 39em;
+    }
+    @media (min-width: $breakpoint-medium) {
+        
+    }
+    @media (min-width: $breakpoint-large) {
+        width: 58em;
+    }
+        
+
+    
+a{
+    color: $color-white;
+}
+a :hover{
+    color: rgb(50, 55, 56);
+    text-decoration: none;
+
+}
+    &--fixed{
+        a :hover{
+            color: rgb(50, 55, 56);
+            text-decoration: none;
+        }
+        
+        position: fixed;
+        background-image: linear-gradient(
+            90deg,
+            $color-dark-blue,
+            $color-blue
+            
+        );
+        animation: reveal
+        $transition-duration-fast ease;
+    }
+}
+
+.header-single{
+    display: flex;
+    font-size: 33px;
+    justify-content: space-between;
+    left: 0;
+    line-height: 3em;
+    padding: 0 1em;
+    right: 0;
+    top: 0;
+    color: #848484;
+    z-index: 2;
+    background-image: linear-gradient(
+        90deg,
+        $color-dark-blue,
+        $color-blue
+        
+    );
+    animation: reveal
+    $transition-duration-fast ease;
+    
+    @media (min-width: $breakpoint-small){  
+        font-size:28px;
+        margin-right: 0em;
+        width: 46.15em;
+        
+    }
+    @media (min-width: $breakpoint-medium) {
+        font-size: 28px;
+        
+    }
+    @media (min-width: $breakpoint-large) {
+        font-size: 30px;
+        width: 63.5em;
+        
+    }
+
+    
+a{
+    color: $color-white;
+}
+a :hover{
+    color: rgb(50, 55, 56);
+    text-decoration: none;
+
+}    
+}

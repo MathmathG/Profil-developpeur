@@ -1,0 +1,59 @@
+.menu {
+    background-color: transparentize($color-grey, 0.4);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+    a{
+        color:$color-white;
+        font-size: 30px;
+    }
+    a:hover{
+        text-decoration: none;
+        color:$color-blue;
+    }
+    
+
+    &--visible {
+        visibility: visible;
+    }
+
+    .close-menu {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .main-nav {
+        margin: 5em auto 0;
+        width: 50%;
+        @media (min-width: $breakpoint-small){
+            margin: 21em 20em 0;
+            width: 50%;
+        }
+        @media (min-width: $breakpoint-large){
+            margin: 5em auto 0;
+            width: 50%;
+        }
+    }
+
+    .social-nav {
+        margin: 2em auto 0;
+        text-align: center;
+        width: 50%;
+        @media (min-width: $breakpoint-small){
+            margin: 2em 21em 0;
+            text-align: center;
+            width: 50%;
+        }
+        @media (min-width: $breakpoint-large){
+            margin: 2em auto 0;
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.action-button {
+    border: $border-width-normal solid $color-white;
+    color: $color-white;
+    display: inline-block;
+    margin: 1em 0;
+    padding: .5em 3em .5em 1em;
+    position: relative;
+    transition: border $transition-duration-slow,
+                color $transition-duration-slow,
+                padding $transition-duration-fast;
+
+    &:after {
+        content: $fa-var-long-arrow-right;
+        font: {
+            family: 'FontAwesome';
+            size: 1.3em;
+        }
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        border-color: $color-dark-blue;
+        color: $color-dark-blue;
+        padding-right: 4em;
+        text-decoration: none;
+    }
+}

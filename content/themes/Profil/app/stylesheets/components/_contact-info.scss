@@ -1,0 +1,23 @@
+.contact-info {
+    &__detail {
+        border-bottom: $border-width-small solid lighten($color-grey, 20);
+        padding: 1em 0 1em 4em;
+        position: relative;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &__icon {
+            color: lighten($color-grey, 50);
+            font-size: 1.3em;
+            left: 1.5rem;
+            position: absolute;
+            top: 2.2rem;
+        }
+
+        &__title {
+            color: lighten($color-grey, 50);
+        }
+    }
+}

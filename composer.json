@@ -1,0 +1,35 @@
+{
+    "name": "mint/profil_mathieu",
+    "authors": [
+        {
+            "name": "Mathmathg",
+            "email": "gle.mathieu@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {"johnpbloch/wordpress": "4.9.*",
+        "wpackagist-theme/twentyseventeen":"1.6",
+        "wpackagist-plugin/akismet":"4.0.7",
+        "wpackagist-plugin/contact-form-7":"5.0.2",
+        "wpackagist-plugin/advanced-custom-fields":"5.6.10",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome":"2.1.2",
+        "wpackagist-plugin/hello-dolly":"1.6"
+    },
+    "require-dev": {
+        "wpackagist-plugin/what-the-file": "1.5.4",
+        "wpackagist-plugin/simply-show-hooks":"1.2.1"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+
+}

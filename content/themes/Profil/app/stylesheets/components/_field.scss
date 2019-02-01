@@ -1,0 +1,59 @@
+.field {
+    width: 100%;
+    padding: 1em 0;
+
+    &__label,
+    &__input,
+    &__textarea {
+        width: 100%;
+    }
+
+    &__label {
+        color: $color-white;
+        display: block;
+        font-weight: 700;
+        padding: 0.1em 0;
+    }
+
+    &__input,
+    &__textarea {
+        background: lighten($color-blue, 5);
+        border: none;
+        color: $color-white;
+        font-size: 1em;
+        padding: 0.5em 0.7em;
+        outline: 0;
+        width: 100%;
+    }
+
+    &__textarea {
+        height: 10em;
+        resize: vertical;
+    }
+
+    &__button {
+        background-color: $color-blue;
+        border: none;
+        color: $color-white;
+        cursor: pointer;
+        font: {
+            size: 0.8em;
+            weight: 700;
+        }
+        padding: 0.8em;
+        transition: $transition-duration-normal;
+
+        &:hover {
+            background-color: lighten($color-blue, 10);
+            color: $color-white;
+        }
+    }
+
+    &.is-half {
+        width: 100%;
+
+        @media (min-width: $breakpoint-large) {
+            flex-basis: calc(50% - .5em);
+        }
+    }
+}

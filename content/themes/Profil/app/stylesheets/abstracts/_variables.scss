@@ -1,0 +1,78 @@
+$color-white: #FFF;
+$color-grey : rgb(170, 169, 169);
+$color-dark-grey:rgb(50, 55, 56);
+$color-blue: #086B80;
+$color-dark-blue:#1D3348;
+$color-black: #020202;
+$color-purple: #583388;
+$color-orange: #B37455;
+$color-yellow: #ffff5a;
+$color_green:#70f970;
+
+
+
+$transition-duration-slow: 0.7s;
+$transition-duration-normal: 0.5s;
+$transition-duration-fast: 0.3s;
+
+$border-width-small: 1px;
+$breakpoint-small:350px;
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
+
+$border-width-small: 1px;
+$border-width-normal: 3px;
+
+$position-1: 50%;
+$position-2: 120%;
+$position-3: 40%;
+$position-4: 140%;
+
+$hobbies-position-1:150%;
+$hobbies-position-2:40%;
+$hobbies-position-3:100%;
+$hobbies-position-4: 100%;
+$hobbies-position-5:150%;
+$hobbies-position-6:105%;
+
+$post-excerpt-background-colors: (
+    1: $color-blue,
+    2: $color-yellow,
+    3: $color-purple,
+    4: $color-green,
+    5: $color-yellow,
+    6: $color-blue
+);
+ $post-excerpt-background-size: (
+     1 : $position-1,
+     2 : $position-2,
+     3 : $position-3,
+     4 : $position-4
+ );
+
+ $post-hobbies-background-colors: (
+    1: $color-blue,
+    2: $color-orange,
+    3: $color-purple,
+    4: $color-green,
+    5: $color-blue,
+    6: $color-yellow
+);
+ $post-hobbies-background-size: (
+     1 : $hobbies-position-1,
+     2 : $hobbies-position-2,
+     3 : $hobbies-position-3,
+     4 : $hobbies-position-4,
+     5 : $hobbies-position-5,
+     6 : $hobbies-position-6,
+ );
+ $white:white;
+ $black: black;
+ $post-hobbies-color:(
+     1 : $white,
+     2 : $black,
+     3 : $white,
+     4 : $black,
+     5 : $white,
+     6 : $black,
+ );

@@ -5,7 +5,7 @@ notes/
 
 /wp
 /wp-config.php
-
+/.htaccess
 /content/themes/twentyseventeen
 /content/plugins/akismet
 /content/plugins/contact-form-7
